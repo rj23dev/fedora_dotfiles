@@ -1,0 +1,162 @@
+/*----------- Everforest ------------*/
+
+@import url("file:///home/rj23/.config/waybar/everforest.css");
+/* Global Styles */
+* {
+  font-family: JetBrainsMono NFP;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Waybar Base */
+#waybar {
+  /*background-color: transparent;*/
+  color: @bg-dim;
+  background: @bg_dim;
+  /*border: 2px solid @color0;*/
+  border-radius: 0px;
+  padding: 3px 6px;
+  margin: 2px 6px;
+}
+
+/* Tooltips */
+tooltip {
+  color: @bg1;
+  background: @bg_dim;
+  border: 1px solid @grey1;
+}
+
+/* Module Groups */
+/*.modules-left,
+.modules-center,
+.modules-right {
+  background: @mod-bg;
+  border: 1px solid @mod-border;
+  border-radius: 10px;
+  padding: 3px 6px;
+  margin: 2px 6px;
+}*/
+
+/*.modules-left  > *,
+.modules-center > *,
+.modules-right > * {
+  background: transparent;
+  border: none;
+  padding: 0px;
+}*/
+
+/* Module Defaults */
+#mode,
+#tray,
+#clock,
+#clock.date,
+#mpris,
+#upower,
+#language,
+#workspaces,
+#network.vpn,
+#pulseaudio.speaker,
+#pulseaudio.mic,
+#temperature,
+#custom-timer,
+#custom-power,
+#custom-updates,
+#custom-weather,
+#custom-launcher,
+#custom-notification,
+#custom-scratchpad-indicator {
+  margin: 0px 2px;
+  padding: 0px 4px;
+  color: @grey2;
+}
+
+/* Specific Module Tweaks */
+#mode { color: @grey2; }
+
+#custom-updates,
+#custom-scratchpad-indicator { color: @grey2; }
+
+#network.vpn { color: @grey2; }
+
+#pulseaudio.speaker,
+#pulseaudio.mic {
+  min-width: 13px;
+  color: @grey2;
+}
+
+#pulseaudio.speaker.muted {
+  color: @bg5;
+}
+
+#pulseaudio.mic.source-muted {
+  color: @bg5;
+}
+
+#upower.charging {
+  color: @red;
+}
+
+#temperature.critical {
+  color: @red;
+}
+
+#custom-notification.notification {
+  color: @green;
+}
+
+#custom-notification.dnd-none,
+#custom-notification.dnd-notification {
+  color: @bg5;
+}
+
+/* Power icon */
+#custom-power {
+  color: @grey2;
+}
+
+/* Clock */
+#clock {
+  color: @grey2;
+}
+
+/* Workspace Buttons */
+#workspaces button {
+  padding: 0 4px;
+  color: @bg4;
+  background: transparent;
+  border: none;
+  box-shadow: inset 0 -2px transparent;
+}
+
+#workspaces button.focused {
+  color: @grey2;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: none;
+}
+
+#workspaces button.active {
+  color: @grey2;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#workspaces button:hover {
+  color: @grey0;
+}
+
+/* System Info Modules */
+#network, #memory, #cpu, #temperature {
+  color: @grey2;
+  padding: 2px;
+}
+
+/* Title (window name) */
+#window {
+  color: @grey2;
+}
+
+.modules-left {
+  margin-right: 500px;
+}

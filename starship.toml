@@ -1,0 +1,175 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'everforest'
+
+format = """
+[](surface0)\
+$os\
+$username\
+[](bg:cyan fg:surface0)\
+$directory\
+[](fg:cyan bg:cyan_deep)\
+$git_branch\
+$git_status\
+[](fg:cyan_deep bg:mist)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:mist bg:cyan_deep)\
+$docker_context\
+[](fg:cyan_deep bg:cyan_light)\
+$time\
+[ ](fg:cyan_light)\
+$line_break$character"""
+
+
+[palettes.everforest]
+background = "#272E33"
+surface0   = "#4F5B58"
+dir_fg     = "#2E383C"
+white      = "#DCE5DF"
+lamplight  = "#83C092"
+gold       = "#DBBC7F"
+cyan       = "#A7C080"
+red        = "#E67E80"
+timber     = "#493B40"
+mist       = "#9DA9A0"
+warmglow   = "#DCD9C8"
+softglow   = "#E6E4D6"
+faintglow  = "#EEEEE5"
+cyan_light = "#A7C080"
+cyan_deep  = "#3C4841"
+
+
+[os]
+disabled = false
+style = "bg:surface0 fg:lamplight"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = ""
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bg:surface0 fg:lamplight"
+style_root = "bg:surface0 fg:red"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:#1a1f1f bg:cyan"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:cyan"
+format = '[[ $symbol $branch ](fg:background bg:cyan)]($style)'
+
+[git_status]
+style = "bg:cyan"
+format = '[[($all_status$ahead_behind )](fg:background bg:cyan)]($style)'
+
+[nodejs]
+disabled = true
+detect_extensions = ["js", "ts", "mjs", "cjs"]
+detect_files = ["package.json", ".node-version", ".nvmrc"]
+detect_folders = ["node_modules"]
+#detect_env_vars = []
+symbol = ""
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[c]
+symbol = " "
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[php]
+symbol = ""
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[java]
+symbol = " "
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[python]
+disabled = true
+symbol = ""
+style = "bg:mist"
+format = '[[ $symbol( $version) ](fg:surface0 bg:mist)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:timber"
+format = '[[ $symbol( $context) ](fg:surface0 bg:timber)]($style)'
+
+[time]
+disabled = false
+time_format = "%I:%M %p"
+style = "bg:cyan_light"
+format = '[[  $time ](fg:surface0 bg:cyan_light)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:cyan_deep)'
+error_symbol = '[](bold fg:red)'
+vimcmd_symbol = '[](bold fg:gold)'
+vimcmd_replace_one_symbol = '[](bold fg:purple)'
+vimcmd_replace_symbol = '[](bold fg:timber)'
+vimcmd_visual_symbol = '[](bold fg:softglow)'

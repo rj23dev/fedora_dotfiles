@@ -1,0 +1,107 @@
+
+* {
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+  font-size: 15px;
+}
+
+
+
+/* Main window */
+window {
+   margin: 0px;
+  padding: 10px;
+  border: 2px solid #859289;
+  border-radius: 0px;
+  background-color: #272e33;
+}
+
+
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #272e33;
+}
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #272e33;
+}
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  background-color: #272e33;
+}
+
+/* Input */
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 0.1em;
+  color: #d3c6aa;
+  background-color: #4f5b58;
+}
+
+#input image {
+    border: none;
+    color: #dbbc7f;
+    background: none;
+}
+
+#input * {
+  outline: none; 
+  /*4px solid @fg!important;*/
+}
+
+/* Text */
+#text {
+  margin: 5px;
+  border: none;
+  color: #d3c6aa;
+}
+
+#entry {
+  background-color: #272e33;
+}
+
+#entry arrow {
+  border: none;
+  color: #2D5A61;
+}
+
+/* Selected Entry */
+#entry:selected {
+  border: 0.11em solid #859289;
+  background-color: #7a8478;
+}
+
+#entry:selected #text {
+  color: #1e2326;
+}
+
+#entry:drop(active) {
+  background-color: #2D5A61!important;
+}
+
+image{
+    margin-left: .25em;
+    margin-right: .25em;
+    background-color: transparent;
+}
+
+/* ── hide scroll-overshoot lines ─────────────────────────────── */
+#scroll overshoot.top,
+#scroll overshoot.bottom {
+    background-image: none;   /* kill the gradient */
+    background-color: transparent;
+  border: none;
+}

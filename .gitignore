@@ -1,0 +1,54 @@
+# -------------------------
+# Log and temporary files
+# -------------------------
+*.log
+*.swp
+*.save
+*.bak
+*.tmp
+*.swp
+
+# -------------------------
+# Cache and history
+# -------------------------
+.cache/
+.history/
+*.cache
+
+# -------------------------
+# Sensitive files
+# -------------------------
+*.key
+*.pem
+*.crt
+.env
+secrets/
+private/
+
+# -------------------------
+# Editor / IDE
+# -------------------------
+.vscode/
+.idea/
+*.iml
+
+# -------------------------
+# GTK bookmarks (personal)
+# -------------------------
+.config/gtk-3.0/bookmarks
+.config/gtk-4.0/bookmarks
+
+# -------------------------
+# OS-specific files
+# -------------------------
+.DS_Store
+Thumbs.db
+*.desktop
+*.directory
+
+# -------------------------
+# Backup files
+# -------------------------
+*~
+*.orig
+*.old

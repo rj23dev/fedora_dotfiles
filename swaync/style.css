@@ -1,0 +1,266 @@
+@define-color bg_dim #1E2326;
+@define-color bg0 #272E33;
+@define-color bg1 #2E383C;
+@define-color bg2 #374145;
+@define-color bg3 #414B50;
+@define-color bg4 #495156;
+@define-color bg5 #4F5B58;
+@define-color bg_red #493B40;
+@define-color bg_yellow #45443C;
+@define-color bg_green #3C4841;
+@define-color bg_blue #384B55;
+@define-color bg_purple #463F48;
+@define-color bg_visual #4C3743;
+@define-color fg #D3C6AA;
+@define-color red #E67E80;
+@define-color yellow #DBBC7F;
+@define-color green #A7C080;
+@define-color blue #7FBBB3;
+@define-color purple #D699B6;
+@define-color aqua #83C092;
+@define-color orange #E69875;
+@define-color grey0 #7A8478;
+@define-color grey1 #859289;
+@define-color grey2 #9DA9A0;
+@define-color statusline1 #A7C080;
+@define-color statusline2 #D3C6AA;
+@define-color statusline3 #E67E80;
+
+* {
+  font-family: JetBrainsMono NFP;
+  
+}
+
+/* Notification Boxes */
+
+
+.notification {
+  background: @bg0;
+  border: 2px solid @grey1;
+  border-radius: 6px;
+  margin: 6px -2px 6px 0px;
+ 
+}
+.notification-content {
+  background: @bg0;
+}
+.notification-default-action,
+.notification-action {
+  border: 2px solid @grey1;
+  border-top: none;
+  border-radius: 0px;
+}
+.notification-default-action:hover,
+.notification-action:hover {
+  color: @bg1;
+  background: @bg0;
+}
+.notification-row {
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+  background: @bg0;
+}
+
+/* Close Button */
+.close-button {
+  background: #859289;
+  color: #272e33;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.close-button:hover {
+  background:#9da9a0;
+  transition: all 0.15s ease-in-out;
+  border: none;
+}
+
+/* Notification Text */
+.summary {
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: @green;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d3c6aa;
+  margin-right: 14px;
+}
+.body {
+  font-size: 15px;
+  font-weight: 400;
+  color: @bg0;
+}
+
+/* Control Center Panel */
+.control-center {
+  background: @bg_dim;
+  border: 2px solid @grey1;
+  border-radius: 6px;
+}
+.control-center-list {
+  background: transparent;
+}
+.control-center-list-placeholder {
+  opacity: 0.5;
+}
+.floating-notifications {
+  background: none !important;
+  box-shadow: none !important;
+}
+.blank-window {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Title Bar (Widget: title) */
+.widget-title {
+  color: @fg;
+  background: @bg_dim;
+  padding: 8px 12px;
+  margin: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.widget-title > button {
+  font-size: 0.9rem;
+  color: @fg;
+  background: @bg0;
+  border-radius: 5px;
+}
+.widget-title > button:hover {
+  background: @bg1;
+  color: @grey0;
+}
+
+/* Label Widget */
+.widget-label {
+  margin: 8px 12px 4px 12px;
+}
+.widget-label > label {
+  font-size: 1rem;
+  color: #d3c6aa;
+}
+
+/* Do Not Disturb Toggle */
+.widget-dnd {
+  background: #1e2326;
+  padding: 6px 10px;
+  margin: 6px 12px;
+  border-radius: 5px;
+  font-size: medium;
+  color: #d3c6aa;
+}
+.widget-dnd > switch {
+  background: #495156;
+  border-radius: 5px;
+}
+.widget-dnd > switch:checked {
+  background: #6fada3;
+  border: 1px solid #6fada3;
+}
+.widget-dnd > switch slider,
+.widget-dnd > switch:checked slider {
+  background: #272e33;
+  border-radius: 5px;
+}
+
+/* Volume Widget */
+.widget-volume {
+  background: @bg0;
+  padding: 5px;
+  margin: 6px 12px;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  color: @grey1;
+}
+
+
+
+/* Buttons Grid Widget */
+.widget-buttons-grid {
+  font-size: x-large;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 6px;
+  background: @bg0;
+}
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  margin: 4px;
+  background: @bg1;
+  color: @grey2;
+  border-radius: 4px;
+}
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: @bg_dim;
+  color: @fg;
+}
+.widget-buttons-grid > flowbox > flowboxchild > button:checked {
+  background: rgba(220, 188, 113, 0.3);
+  color: #d3c6aa;
+}
+
+/* Reset Chrome */
+.widget-menubar > box > .menu-button-bar > button,
+.topbar-buttons > button {
+  border: none;
+  background: transparent;
+}
+
+/* Volume bar fix */
+.widget-volume scale trough {
+  background: rgba(50, 60, 68, 0.3);  /* muted matte base */
+  border-radius: 4px;
+  min-height: 8px;
+  min-width: 100px;
+}
+
+.widget-volume scale trough highlight {
+  background: rgba(111, 173, 163, 0.4);
+  border-radius: 4px;
+}
+
+/* Fix volume slider border and color */
+.widget-volume scale trough {
+  background: rgba(50, 60, 68, 0.3);  /* matte trough */
+  border-radius: 4px;
+  min-height: 8px;
+  min-width: 100px;
+  border: none;
+}
+
+.widget-volume scale trough highlight {
+  background: #495156; /* subtle cyan fill */
+  border-radius: 4px;
+  border: none;
+}
+
+.widget-volume scale slider {
+  background: #bfe2d8; /* pastel cyan */
+  border: none;
+  border-radius: 6px;
+  min-height: 12px;
+  min-width: 12px;
+  box-shadow: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Kill the full-size transparent background */
+.floating-notifications,
+.blank-window,
+.notification-window {
+  background: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
