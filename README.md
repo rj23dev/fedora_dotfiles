@@ -38,6 +38,10 @@ The configurations focus on:
 
 ![Hyprland Desktop](screenshots/hyprland.png)
 
+### Kitty & Htop
+
+![Kitty & Htop](screenshots/kitty.png)
+
 ### Wofi & Swaync
 
 ![Wofi & Swaync](screenshots/hyprland1.png)
