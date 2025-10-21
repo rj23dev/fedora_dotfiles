@@ -1,6 +1,6 @@
 # 🖥️ My Personal Fedora Hyprland Setup
 
-This repository contains my personal **Hyprland** setup on Fedora, including configuration files for **SwayNC**, **Waybar**, **Wofi**, and my **shell environment**.  
+This repository contains my personal **Hyprland** setup on Fedora Gnome base, including configuration files for **SwayNC**, **Waybar**, **Wofi**, and my **shell environment**.  
 These configs are tailored for my workflow, visual preferences, and hardware. Configs are optimized for Hyprland + Fedora. Adaptation may be required for other distributions. 
 
 > ⚠️ **Important:** These are for **personal use only**. I do **not** intend to commercialize or distribute them for profit.
