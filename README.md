@@ -16,6 +16,7 @@ These configs are tailored for my workflow, visual preferences, and hardware. Co
 - [Installation / Usage](#installation--usage)  
 - [Fonts & Themes](#fonts--themes)  
 - [Inspirations](#inspirations)  
+- [Credits](#credits)
 - [License](#license)
 
 ---
@@ -99,7 +100,7 @@ The configurations focus on:
 1. Clone the repository:
 
 ```
-git clone https://github.com/rj23dev/dotfiles.git
+git clone https://github.com/rj23dev/fedora_dotfiles.git
 
 ```
 
@@ -136,9 +137,17 @@ source ~/.bash_aliases
 ## Inspirations
 
 I have taken **direct inspiration from many publicly available dotfiles and online sources**.  
-While the base ideas come from these resources, I have **customized, modified, and tweaked** them to fit my workflow and visual preferences.  
+While the base ideas come from these resources, I have **customized, modified, and tweaked** them to fit my workflow and visual preferences. 
 
 Feel free to **use, adapt, or learn** from these configs, but please **respect the original authors** if referencing their work.
+
+## Credits
+
+- Based on [lvntcnylmz](https://github.com/lvntcnylmz)’s SwayNC dotfiles.  
+- Colors inspired by the [Everforest Theme](https://github.com/sainnhe/everforest) creators.  
+- Wallpaper adapted from [Everforest Wallpapers for Arch Linux](https://www.deviantart.com/deviantarchuser/art/Everforest-Wallpapers-for-Arch-Linux-1063548581) on DeviantArt.  
+- Appreciation to various dotfiles creators on GitHub for design and structure inspiration.
+
 
 ## License
 

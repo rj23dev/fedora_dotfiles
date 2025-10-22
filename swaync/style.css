@@ -52,8 +52,8 @@
 }
 .notification-default-action:hover,
 .notification-action:hover {
-  color: @bg1;
-  background: @bg0;
+  color: @red;
+  background: @green;
 }
 .notification-row {
   outline: none;
@@ -247,6 +247,41 @@
 
 .widget-volume scale slider {
   background: #bfe2d8; /* pastel cyan */
+  border: none;
+  border-radius: 6px;
+  min-height: 12px;
+  min-width: 12px;
+  box-shadow: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Brightness (Backlight) Slider Styling */
+.widget-backlight {
+  background: #1e2326;
+  padding: 5px;
+  margin: 5px 10px;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  color: #d3c6aa;
+}
+
+.widget-backlight scale trough {
+  background: rgba(50, 60, 68, 0.3);
+  border-radius: 4px;
+  min-height: 8px;
+  min-width: 100px;
+  border: none;
+}
+
+.widget-backlight scale trough highlight {
+  background: #495156;
+  border-radius: 4px;
+  border: none;
+}
+
+.widget-backlight scale slider {
+  background: #bfe2d8;
   border: none;
   border-radius: 6px;
   min-height: 12px;
